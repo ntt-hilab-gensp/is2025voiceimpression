@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice impression-controllable zero-shot TTS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+
+<header>
+
+
+	<h1>
+		<p>Voice impression-controllable zero-shot TTS</p>
+	</h1>	
+
+	<h2>
+		<!-- <p>Kenichi Fujita, Shota Horiguchi, and Yusuke Ijima</p>
+		-->
+		<p>Anonymous submission to Interspeech 2025</p>
+	</h2>	
+	<h3>
+		<!-- <p>NTT Corporation, Japan</p>
+		-->
+	</h3>	
+
+
+</header>
+
+
+<main>
+
+
+
+
+
+
+<div id="audio" class="bottom">
+
+	<h2>Samples</h2>
+	<li>HiFi-GAN was used for all speech sample generation.</li>
+	<li>All speakers in this page are chosen from test data.</li>
+
+  	<h2>Single dimension impression modulation on zero-shot TTS </h2>
+  	<li>Altering specific dimensions of speech impression vector</li>
+</li>
+<h3>Speaker1(Female)</h3>
+<style>
+	table{
+		writing-mode: vertical-lr;
+	}
+	th,td{
+		writing-mode: horizontal-tb;
+	}
+</style>
+<table align="center" class="bottom">
+	<tr>
+		<th></th>
+		<th>High-Low pitched</th>
+		<th>Masculine-Feminine</th>
+		<th>Clear-Hoarse</th>
+		<th>Restless-Calm</th> 
+		<th>Powerful-Weak</th>
+		<th>Youthful-Elderly</th>			
+		<th>Thick-Thin</th> 
+		<th>Tense-Lax</th> 
+		<th>Dark-Bright</th> 
+		<th>Cold–Warm</th> 
+		<th>Slow–Fast</th> 			
+	</tr>
+	<tr>
+		<td>-3</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_minus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_minus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_minus3.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>-2</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_minus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_minus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_minus2.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>-1</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_minus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_minus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_minus1.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1.wav" controls></audio></td>
+	</tr>
+	<td>+1</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_plus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_plus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_plus1.wav" controls></audio></td>
+	</tr>
+	<td>+2</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_plus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_plus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_plus2.wav" controls></audio></td>
+	</tr>
+	<td>+3</td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_1_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_2_plus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_3_plus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_4_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_5_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_6_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_7_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_8_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_9_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_10_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/F20002@20202Q_Select@1_11_plus3.wav" controls></audio></td>
+	</tr>
+</table>
+
+<h3>Speaker2(Male)</h3>
+<style>
+	table{
+		writing-mode: vertical-lr;
+	}
+	th,td{
+		writing-mode: horizontal-tb;
+	}
+</style>
+<table align="center" class="bottom">
+	<tr>
+		<th></th>
+		<th>High-Low pitched</th>
+		<th>Masculine-Feminine</th>
+		<th>Clear-Hoarse</th>
+		<th>Restless-Calm</th> 
+		<th>Powerful-Weak</th>
+		<th>Youthful-Elderly</th>			
+		<th>Thick-Thin</th> 
+		<th>Tense-Lax</th> 
+		<th>Dard–Bright</th> 
+		<th>Cold–Warm</th> 
+		<th>Slow–Fast</th> 			
+	</tr>
+	<tr>
+		<td>-3</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_minus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_minus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_minus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_minus3.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>-2</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_minus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_minus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_minus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_minus2.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>-1</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_minus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_minus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_minus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_minus1.wav" controls></audio></td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1.wav" controls></audio></td>
+	</tr>
+	<td>+1</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_plus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_plus1.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_plus1.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_plus1.wav" controls></audio></td>
+	</tr>
+	<td>+2</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_plus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_plus2.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_plus2.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_plus2.wav" controls></audio></td>
+	</tr>
+	<td>+3</td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_1_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_2_plus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_3_plus3.wav" controls></audio></td>			
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_4_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_5_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_6_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_7_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_8_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_9_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_10_plus3.wav" controls></audio></td>
+		<td><audio src="./audios/1d_modulation/009M44@20202Q_Select@1_11_plus3.wav" controls></audio></td>
+	</tr>
+</table>
+
+
+</div>
+
+
+
+</main>
+
+
+</body>
+
+
+</html>
