@@ -16,7 +16,7 @@
 
 
 	<h1>
-		<p>Voice impression-controllable zero-shot TTS</p>
+		<p>Voice-Impression-Controllable zero-shot TTS</p>
 	</h1>	
 
 	<h2>
@@ -44,10 +44,10 @@
 
 	<h2>Samples</h2>
 	<li>HiFi-GAN was used for all speech sample generation.</li>
-	<li>All speakers in this page are chosen from test data.</li>
+	<li>All speakers in this page are chosen from test data, i.e., generated with zero-shot condition.</li>
 
   	<h2>Single dimension impression modulation on zero-shot TTS </h2>
-  	<li>Altering specific dimensions of speech impression vector</li>
+  	<li>Altering specific dimensions of the speech impression vector</li>
 </li>
 <h3>Speaker1(Female)</h3>
 <li>Reference Speech</li>
@@ -64,17 +64,17 @@
 <table align="center" class="bottom">
 	<tr>
 		<th></th>
-		<th>High-Low pitched</th>
-		<th>Masculine-Feminine</th>
-		<th>Clear-Hoarse</th>
-		<th>Calm-Restless</th> 
-		<th>Powerful-Weak</th>
-		<th>Youthful-Elderly</th>			
-		<th>Thick-Thin</th> 
-		<th>Tense-Lax</th> 
-		<th>Dark-Bright</th> 
-		<th>Cold–Warm</th> 
-		<th>Slow–Fast</th> 			
+		<th>A) High-Low pitched</th>
+		<th>B) Masculine-Feminine</th>
+		<th>C) Clear-Hoarse</th>
+		<th>D) Calm-Restless</th> 
+		<th>E) Powerful-Weak</th>
+		<th>F) Youthful-Elderly</th>			
+		<th>G) Thick-Thin</th> 
+		<th>H) Tense-Lax</th> 
+		<th>I) Dark-Bright</th> 
+		<th>J) Cold–Warm</th> 
+		<th>K) Slow–Fast</th> 			
 	</tr>
 	<tr>
 		<td>-3</td>
@@ -188,17 +188,17 @@
 <table align="center" class="bottom">
 	<tr>
 		<th></th>
-		<th>High-Low pitched</th>
-		<th>Masculine-Feminine</th>
-		<th>Clear-Hoarse</th>
-		<th>Calm-Restless</th> 
-		<th>Powerful-Weak</th>
-		<th>Youthful-Elderly</th>			
-		<th>Thick-Thin</th> 
-		<th>Tense-Lax</th> 
-		<th>Dard–Bright</th> 
-		<th>Cold–Warm</th> 
-		<th>Slow–Fast</th> 			
+		<th>A) High-Low pitched</th>
+		<th>B) Masculine-Feminine</th>
+		<th>C) Clear-Hoarse</th>
+		<th>D) Calm-Restless</th> 
+		<th>E) Powerful-Weak</th>
+		<th>F) Youthful-Elderly</th>			
+		<th>G) Thick-Thin</th> 
+		<th>H) Tense-Lax</th> 
+		<th>I) Dard–Bright</th> 
+		<th>J) Cold–Warm</th> 
+		<th>K) Slow–Fast</th> 			
 	</tr>
 	<tr>
 		<td>-3</td>
@@ -297,8 +297,8 @@
 	</tr>
 </table>
 
-<h2>Automatic voice impression vector generation from LLM</h2>
-<li>Leveraging an LLM to automate the process of determining optimal voice impression vector values</li>
+<h2>Zero-shot impression control with automatic mapping from freely-described impresions using LLM</h2>
+<li>Leveraging an LLM(ChatGPT-4o) to automate the determination of optimal impression vectors</li>
 
 <h3>Prompt example (Japanese)</h3>
 <pre>
@@ -326,7 +326,7 @@
 
 </pre>
 
-<h3>Prompt example (English)</h3>
+<h3>Prompt example (English translated from Japanese)</h3>
 <pre>
 	# Task
 	## We have data evaluating the impression of a voice based on the following 11 impressions, using a continuous scale from 1 to 7.
@@ -352,14 +352,60 @@
 
 </pre>
 
+<h3>Speech Samples</h3>
+
+<li>Female</li>
+<table align="center" class="bottom">
+	<tr>
+		<th>condition</th>
+		<th>speech</th>
+	</tr>
+	<tr>
+		<th>reference</th>
+		<th><audio src="./audios/original/F_1.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>no modulation</th>
+		<th><audio src="./audios/LLM/F_orig.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>target: ``sleepy''</th>
+		<th><audio src="./audios/LLM/F_sleepy_LLM.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>target: ``urgent''</th>
+		<th><audio src="./audios/LLM/F_kinkyu_LLM.wav" controls></audio></th>
+	</tr>
+
+</table>
+
+<li>Male</li>
+<table align="center" class="bottom">
+	<tr>
+		<th>condition</th>
+		<th>speech</th>
+	</tr>
+	<tr>
+		<th>reference</th>
+		<th><audio src="./audios/original/M_1.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>no modulation</th>
+		<th><audio src="./audios/LLM/M_orig.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>target: ``sleepy''</th>
+		<th><audio src="./audios/LLM/M_sleepy_LLM.wav" controls></audio></th>
+	</tr>
+	<tr>
+		<th>target: ``urgent''</th>
+		<th><audio src="./audios/LLM/M_kinkyu_LLM.wav" controls></audio></th>
+	</tr>
+
+</table>
 
 </div>
-
-
-
 </main>
-
-
 </body>
 
 
