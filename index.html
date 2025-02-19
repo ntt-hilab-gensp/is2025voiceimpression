@@ -43,6 +43,7 @@
 	<li class="jisage"><a href="#female_speech">Speech samples (female)</a></li>
 	<li class="jisage"><a href="#male_speech">Speech samples (male)</a></li>
 	<li><a href="#llm">Zero-shot impression control with automatic mapping from freely-described impresions using LLM</a></li>
+	<li class="jisage"><a href="#llm_prompt">Prompt example</a></li>
 	<li class="jisage"><a href="#llm_speech">Speech samples</a></li>
 	<h2 id="samples">Samples</h2>
 	<li>HiFi-GAN was used for all speech sample generation.</li>
@@ -51,7 +52,7 @@
   	<h2 id="single">Single dimension impression modulation on zero-shot TTS </h2>
   	<li>Altering specific dimensions of the speech impression vector</li>
 </li>
-<h3 id="female_speech">Speaker1(Female)</h3>
+<h3 id="female_speech">Speaker1 (Female)</h3>
 <li>Reference Speech</li>
 <audio src="./audios/original/F_1.wav" controls></audio>
 <style>
@@ -175,7 +176,7 @@
 	</tr>
 </table>
 
-<h3 id="male_speech">Speaker2(Male)</h3>
+<h3 id="male_speech">Speaker2 (Male)</h3>
 <li>Reference Speech</li>
 <audio src="./audios/original/M_1.wav" controls></audio>
 <style>
@@ -302,7 +303,7 @@
 <h2 id="llm">Zero-shot impression control with automatic mapping from freely-described impresions using LLM</h2>
 <li>Leveraging an LLM(ChatGPT-4o) to automate the determination of optimal impression vectors</li>
 
-<h3>Prompt example (Japanese)</h3>
+<h3 id="llm_prompt">Prompt example (Japanese)</h3>
 <pre>
 	# Task
 	## 声の印象について、次の11個の印象を1から7の連続値で評価したデータがあります。
